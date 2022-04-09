@@ -1,0 +1,24 @@
+.page-header {
+  padding: 25px 0 20px;
+  position: sticky;
+  top: 0;
+  background-color: $color-light;
+  box-shadow: $shadows;
+
+  &__wrapper {
+    @include flex($items: flex-end, $content: space-between);
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__container {
+    height: 100%;
+    @include flex($direction: column, $content: space-between, $items: flex-end);
+  }
+
+  &__button {
+    margin-bottom: 13px;
+  }
+}
