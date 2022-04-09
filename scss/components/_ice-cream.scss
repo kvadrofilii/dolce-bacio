@@ -1,0 +1,26 @@
+.ice-cream {
+  @extend %shadows;
+  border-radius: 10px;
+  background-color: $color-light;
+  @include flex($direction: column, $content: space-between, $items: stretch);
+
+  &__image {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__content {
+    height: 100%;
+    padding: 0 20px 20px 20px;
+    @include flex($direction: column, $content: flex-end, $items: stretch);
+  }
+
+  &__title {
+    padding: 20px;
+  }
+
+  &__text {
+    @include font($size: 1.8rem);
+    padding-bottom: 40px;
+  }
+}
