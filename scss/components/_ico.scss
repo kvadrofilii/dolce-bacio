@@ -1,0 +1,19 @@
+.ico {
+  width: 60px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &_technology {
+    background-image: url("../../assets/svg/technology.svg");
+  }
+
+  &_exclusive {
+    background-image: url("../../assets/svg/exclusive.svg");
+  }
+
+  &_best {
+    background-image: url("../../assets/svg/best.svg");
+  }
+}
