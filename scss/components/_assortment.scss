@@ -1,0 +1,23 @@
+.assortment {
+  background: url(../../assets/images/bg.png);
+
+  &__title {
+    padding: 50px 0;
+  }
+
+  &__column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+
+    @include media-tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media-laptop {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
