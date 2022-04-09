@@ -4,6 +4,10 @@
   &__link {
     position: absolute;
     display: block;
-    top: -100px;
+    top: -50px;
+
+    @include media-mobile {
+      top: -120px;
+    }
   }
 }
