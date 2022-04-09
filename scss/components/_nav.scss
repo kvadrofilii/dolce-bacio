@@ -1,0 +1,36 @@
+.nav {
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    @include flex($content: flex-end);
+  }
+
+  &__item {
+    padding: 10px 10px 0 35px;
+  }
+
+  &__item:first-child {
+    padding-left: 10px;
+  }
+
+  &__sublist {
+    display: none;
+  }
+
+  &__link {
+    @include font($size: 1.8rem, $height: 160%);
+    text-decoration: none;
+    color: $color-dark;
+    @extend %transition;
+
+    &:hover {
+      padding-bottom: 5px;
+      border-bottom: 2px solid $color-dark;
+    }
+
+    &:active {
+      color: $color-light;
+    }
+  }
+}
