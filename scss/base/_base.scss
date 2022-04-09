@@ -15,6 +15,10 @@ body {
   @extend %font-prim;
   @include font($size: 1.6rem, $height: 160%);
   color: $color-dark;
+
+  &.hamburger__toggle {
+    overflow: hidden;
+  }
 }
 
 h1,
