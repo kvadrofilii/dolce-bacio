@@ -1,9 +1,11 @@
 .button {
   padding: 5px 20px;
-  border-radius: 20px;
+  border-radius: 10px;
+  text-align: center;
   color: $color-dark;
   cursor: pointer;
   border: 2px solid $color-dark;
+  @extend %transition;
 
   &:hover {
     background-color: $color-dark;
@@ -14,5 +16,22 @@
     color: $color-dark;
     background-color: $color-light;
     border: 2px solid $color-dark;
+  }
+
+  &_colored {
+    background-color: $color-dark;
+    color: $color-light;
+    border: 2px solid $color-dark;
+
+    &:hover {
+      background-color: $color-light;
+      color: $color-dark;
+    }
+
+    &:active {
+      color: $color-light;
+      background-color: $color-dark;
+      border: 2px solid $color-dark;
+    }
   }
 }
