@@ -1,7 +1,15 @@
 .logo {
-  height: 50px;
+  height: 30px;
 
   &_active {
     cursor: pointer;
+  }
+
+  @include media-tablet {
+    height: 40px;
+  }
+
+  @include media-laptop {
+    height: 50px;
   }
 }
