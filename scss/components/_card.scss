@@ -1,0 +1,85 @@
+.card {
+  padding: 50px 20px;
+  margin-bottom: 20px;
+  flex-basis: 32%;
+  @extend %shadows;
+  border-radius: 10px;
+  @include flex($direction: column, $content: space-between, $items: stretch);
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
+
+  &__content {
+    @include flex($direction: column, $content: center, $items: center);
+  }
+
+  &__chevron {
+    width: 120px;
+    height: 80px;
+    margin-bottom: 70px;
+    position: relative;
+    border-radius: 10px 10px 0 0;
+    @include flex($content: center, $items: flex-end);
+
+    &::before,
+    &::after {
+      content: "";
+      width: 0;
+      height: 0;
+      position: absolute;
+      top: 100%;
+      border-top: 0px solid transparent;
+      border-bottom: 40px solid transparent;
+    }
+
+    &::before {
+      left: 0;
+    }
+    &::after {
+      right: 0;
+    }
+  }
+
+  &__chevron_technology {
+    background: $color-technology;
+
+    &::before {
+      border-right: 60px solid $color-technology;
+    }
+    &::after {
+      border-left: 60px solid $color-technology;
+    }
+  }
+
+  &__chevron_exclusive {
+    background: $color-exclusive;
+
+    &::before {
+      border-right: 60px solid $color-exclusive;
+    }
+    &::after {
+      border-left: 60px solid $color-exclusive;
+    }
+  }
+
+  &__chevron_best {
+    background: $color-best;
+
+    &::before {
+      border-right: 60px solid $color-best;
+    }
+    &::after {
+      border-left: 60px solid $color-best;
+    }
+  }
+
+  &__title {
+    text-align: left;
+    @include font($size: 2.2rem, $weight: 700);
+  }
+
+  &__text {
+    padding-top: 20px;
+  }
+}
