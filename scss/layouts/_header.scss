@@ -1,17 +1,36 @@
 .page-header {
-  padding: 25px 0 20px;
+  min-height: 70px;
+  padding: 20px 0 10px;
   position: sticky;
   top: 0;
   background-color: $color-light;
   @extend %shadows;
   z-index: 666;
 
+  @include media-mobile {
+    min-height: 120px;
+    padding: 25px 0 20px;
+  }
+
   &__wrapper {
-    @include flex($items: flex-end, $content: space-between);
+    @include flex($direction: column);
+
+    @include media-mobile {
+      @include flex($items: flex-end, $content: space-between);
+    }
+
+    @include media-tablet {
+      @include flex($items: flex-end, $content: space-between);
+    }
   }
 
   &__description {
     text-align: center;
+    display: none;
+
+    @include media-mobile {
+      display: block;
+    }
   }
 
   &__container {
@@ -20,6 +39,18 @@
   }
 
   &__button {
-    margin-bottom: 13px;
+    font-size: 1.4rem;
+    padding: 3px 10px;
+    display: none;
+
+    @include media-mobile {
+      display: block;
+    }
+
+    @include media-tablet {
+      padding: 5px 20px;
+      margin-bottom: 13px;
+      font-size: 1.6rem;
+    }
   }
 }
