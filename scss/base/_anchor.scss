@@ -1,0 +1,9 @@
+.anchor {
+  position: relative;
+
+  &__link {
+    position: absolute;
+    display: block;
+    top: -100px;
+  }
+}
