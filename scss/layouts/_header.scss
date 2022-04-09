@@ -3,7 +3,8 @@
   position: sticky;
   top: 0;
   background-color: $color-light;
-  box-shadow: $shadows;
+  @extend %shadows;
+  z-index: 666;
 
   &__wrapper {
     @include flex($items: flex-end, $content: space-between);
