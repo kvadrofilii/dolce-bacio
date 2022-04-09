@@ -1,0 +1,16 @@
+User-agent: Yandex
+Disallow: /css
+Disallow: /js
+Disallow: /php
+Host: dolce-bacio.ru
+
+User-agent: Googlebot
+Disallow: /css
+Disallow: /js
+Disallow: /php
+
+User-agent: *
+Disallow: /css
+Disallow: /js
+Disallow: /php
+Host: dolce-bacio.ru
