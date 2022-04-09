@@ -1,0 +1,25 @@
+.clients {
+  padding: 50px 0 70px;
+  background: url(../../assets/images/bg.png);
+
+  &__title {
+    padding-bottom: 30px;
+  }
+
+  &__list {
+    @include flex($content: space-between, $wrap: wrap);
+  }
+
+  &__image {
+    height: 50px;
+    margin-bottom: 30px;
+
+    @include media-tablet {
+      height: 70px;
+    }
+
+    @include media-laptop {
+      height: 80px;
+    }
+  }
+}
