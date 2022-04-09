@@ -1,0 +1,19 @@
+.advantages {
+  padding: 30px 0 80px;
+  @extend %shadows;
+
+  &__bg {
+    width: 100%;
+  }
+
+  &__title {
+    padding: 50px 0;
+  }
+
+  &__content {
+    display: block;
+    @include media-tablet {
+      @include flex($content: space-between, $items: stretch);
+    }
+  }
+}
