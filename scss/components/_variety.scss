@@ -1,0 +1,46 @@
+.variety {
+  padding: 30px 0;
+  background: url(../../assets/images/bg.png);
+
+  &__title {
+    padding: 30px 0;
+  }
+
+  &__subtitle {
+    text-align: left;
+    font-size: 2rem;
+    padding-bottom: 20px;
+  }
+
+  &__content {
+    @include flex($direction: column-reverse);
+
+    @include media-tablet {
+      @include flex($content: space-between);
+    }
+  }
+
+  &__list {
+    flex-shrink: 2;
+    padding-right: 10px;
+  }
+
+  &__term {
+    display: inline;
+    font-weight: 700;
+  }
+
+  &__description {
+    display: inline;
+  }
+
+  &__image {
+    width: 100%;
+    margin: 15px 0;
+
+    @include media-tablet {
+      width: 50%;
+      margin: 0;
+    }
+  }
+}
