@@ -1,13 +1,13 @@
 'use strict';
 
-const pageHeader = document.querySelector('.page-header');
-const hamburgerList = pageHeader.querySelector('.hamburger__list');
-const hamburgerBtn = pageHeader.querySelector('.hamburger__btn');
+const pageHeader = document.querySelector('.page-header'),
+  hamburgerList = pageHeader.querySelector('.hamburger__list'),
+  hamburgerBtn = pageHeader.querySelector('.hamburger__btn');
 
 hamburgerBtn.addEventListener('click', () => toggleClass());
 
-hamburgerList.addEventListener('click', (event) => {
-  const target = event.target;
+hamburgerList.addEventListener('click', (e) => {
+  const target = e.target;
 
   if (target.tagName !== 'A') return;
   toggleClass();
