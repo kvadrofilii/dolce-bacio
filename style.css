@@ -40,10 +40,6 @@ body {
   color: #444444;
 }
 
-body.hamburger__toggle {
-  overflow: hidden;
-}
-
 h1,
 h2,
 h3 {
